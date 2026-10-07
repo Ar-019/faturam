@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.ar019.faturam.app-debug-42:/mipmap-anydpi-v26_ic_launcher.png.flat",
+        "source": "com.ar019.faturam.app-main-44:/mipmap-anydpi-v26/ic_launcher.png"
+    },
+    {
+        "merged": "com.ar019.faturam.app-debug-42:/mipmap-anydpi-v26_ic_launcher_round.png.flat",
+        "source": "com.ar019.faturam.app-main-44:/mipmap-anydpi-v26/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.ar019.faturam.app-debug-42:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.ar019.faturam.app-main-44:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.ar019.faturam.app-debug-42:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.ar019.faturam.app-main-44:/drawable/ic_launcher_background.xml"
+    }
+]
