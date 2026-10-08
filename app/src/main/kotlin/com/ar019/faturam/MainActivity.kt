@@ -23,7 +23,21 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
+
 import com.ar019.faturam.ui.theme.FaturamTheme
+
+import java.io.File
+
+import androidx.compose.runtime.DisposableEffect
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.SideEffect
+import androidx.compose.runtime.State
+
+import kotlinx.coroutines.delay
+
+import androidx.compose.ui.platform.LocalContext
+
+import android.os.Environment
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,7 +45,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             FaturamTheme {
-                var girdi by remember { mutableStateOf("Boş") }
+                var girdi by remember { mutableStateOf("Buraya yazı girin") }
                 
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Column(
@@ -46,7 +60,7 @@ class MainActivity : ComponentActivity() {
                         OutlinedTextField(
                             value = girdi,
                             onValueChange = { girdi = it },
-                            label = { Text("Boş") }
+                            label = { Text("Buraya yazı girin") }
                         )
                         
                         Spacer(modifier = Modifier.height(24.dp))
@@ -60,6 +74,14 @@ class MainActivity : ComponentActivity() {
                                 Text(text = girdi)
                             }
                         }
+                        
+                        LaunchedEffect(girdi) {
+                        delay(5000)
+                        val root = Environment.getExternalStorageDirectory()
+                        val file = File(root, "ornek.txt")
+                        file.writeText(girdi)
+                        }
+                        
                     } // Column burada kapanıyor
                 } // Scaffold lambda kapanıyor
             } // FaturamTheme kapanıyor

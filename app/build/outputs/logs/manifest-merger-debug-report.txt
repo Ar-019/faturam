@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:2:1-24:12
+ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:2:1-30:12
 MERGED from [androidx.activity:activity:1.9.2] /data/data/be.xbd.kotlin/files/home/.gradle/caches/9.6.1/transforms/c9b96b957e520c4c368f565142cfe98a/transformed/activity-1.9.2/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.activity:activity-ktx:1.9.2] /data/data/be.xbd.kotlin/files/home/.gradle/caches/9.6.1/transforms/715e57c00aa9fe845ec7eb30e5d6dbef/transformed/activity-ktx-1.9.2/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.material3:material3-android:1.3.0] /data/data/be.xbd.kotlin/files/home/.gradle/caches/9.6.1/transforms/2cbbe73eef9fad0debd460cdfb6b5246/transformed/material3-release/AndroidManifest.xml:17:1-22:12
@@ -47,6 +47,7 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /data/data/be.xbd.kotlin/fi
 MERGED from [androidx.tracing:tracing:1.0.0] /data/data/be.xbd.kotlin/files/home/.gradle/caches/9.6.1/transforms/3e31c6621f03dc489cfe2eeb70cc5aa3/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.2.0] /data/data/be.xbd.kotlin/files/home/.gradle/caches/9.6.1/transforms/5111e35897d238acc2b2cf28fd13d7c8/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
 	package
+		ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:3:5-32
 		INJECTED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml
@@ -54,21 +55,19 @@ MERGED from [androidx.arch.core:core-runtime:2.2.0] /data/data/be.xbd.kotlin/fil
 		INJECTED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:2:11-69
-uses-permission#android.permission.MANAGE_EXTERNAL_STORAGE
-ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:4:5-82
-	android:name
-		ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:4:22-79
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:5:5-80
 	android:name
 		ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:5:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:6:5-81
+ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:6:5-8:38
+	android:maxSdkVersion
+		ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:8:9-35
 	android:name
-		ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:6:22-78
+		ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:7:9-65
 application
-ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:8:5-23:19
-INJECTED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:8:5-23:19
+ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:10:5-28:19
+INJECTED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:10:5-28:19
 MERGED from [androidx.emoji2:emoji2:1.3.0] /data/data/be.xbd.kotlin/files/home/.gradle/caches/9.6.1/transforms/40728242f764e0cd3aff4c74d77cfb13/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.3.0] /data/data/be.xbd.kotlin/files/home/.gradle/caches/9.6.1/transforms/40728242f764e0cd3aff4c74d77cfb13/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.core:core:1.13.1] /data/data/be.xbd.kotlin/files/home/.gradle/caches/9.6.1/transforms/8ca41d3237d418f34e4eb7eee759d5fb/transformed/core-1.13.1/AndroidManifest.xml:28:5-89
@@ -83,36 +82,38 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /data/data/be.xbd.kotlin/fi
 MERGED from [androidx.startup:startup-runtime:1.1.1] /data/data/be.xbd.kotlin/files/home/.gradle/caches/9.6.1/transforms/5e714ee661d37a6d0a6768d128ff531a/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
 	android:extractNativeLibs
 		INJECTED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml
+	android:requestLegacyExternalStorage
+		ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:14:9-52
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.1] /data/data/be.xbd.kotlin/files/home/.gradle/caches/9.6.1/transforms/8ca41d3237d418f34e4eb7eee759d5fb/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:12:9-35
+		ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:15:9-35
 	android:label
-		ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:11:9-41
+		ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:13:9-41
 	android:icon
-		ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:10:9-43
+		ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:12:9-43
 	android:allowBackup
-		ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:9:9-35
+		ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:11:9-35
 	android:theme
-		ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:13:9-45
+		ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:16:9-45
 activity#com.ar019.faturam.MainActivity
-ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:14:9-22:20
+ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:18:9-26:20
 	android:exported
-		ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:16:13-36
+		ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:20:13-36
 	android:theme
-		ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:17:13-49
+		ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:21:13-49
 	android:name
-		ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:15:13-41
+		ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:19:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:18:13-21:29
+ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:22:13-25:29
 action#android.intent.action.MAIN
-ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:19:17-69
+ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:23:17-69
 	android:name
-		ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:19:25-66
+		ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:23:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:20:17-77
+ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:24:17-77
 	android:name
-		ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:20:27-74
+		ADDED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml:24:27-74
 uses-sdk
 INJECTED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /data/data/be.xbd.kotlin/files/home/projects/Faturam/app/src/main/AndroidManifest.xml
