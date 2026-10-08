@@ -11,9 +11,9 @@ android {
     defaultConfig {
         applicationId = "com.ar019.faturam"
         minSdk = 21
-        targetSdk = 29
-        versionCode = 2
-        versionName = "1.1"
+        targetSdk = 34
+        versionCode = 3
+        versionName = "1.2"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 

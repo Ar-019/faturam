@@ -39,6 +39,19 @@ import androidx.compose.ui.platform.LocalContext
 
 import android.os.Environment
 
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
+
+import androidx.compose.runtime.Composable
+import androidx.compose.material3.Button
+
+import android.content.Context
+import androidx.compose.ui.platform.LocalContext
+
+import java.io.FileInputStream
+import java.io.FileOutputStream
+import java.io.IOException
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,6 +59,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             FaturamTheme {
                 var girdi by remember { mutableStateOf("Buraya yazı girin") }
+                val context = LocalContext.current
                 
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Column(
@@ -65,21 +79,14 @@ class MainActivity : ComponentActivity() {
                         
                         Spacer(modifier = Modifier.height(24.dp))
                         
-                        Card(
-                            modifier = Modifier.padding(18.dp)
-                        ) {
-                            Column(
-                                modifier = Modifier.padding(16.dp)
-                            ) {
-                                Text(text = girdi)
-                            }
-                        }
-                        
-                        LaunchedEffect(girdi) {
-                        delay(5000)
-                        val root = Environment.getExternalStorageDirectory()
-                        val file = File(root, "ornek.txt")
-                        file.writeText(girdi)
+                        dugme(onClick = { try {
+                            val fos: FileOutputStream =
+                            context.openFileOutput("Text.txt", Context.MODE_PRIVATE)
+                            fos.write()
+                            fos.flush()
+                            fos.close() 
+                        } catch (e: IOException) {
+                            e.printStackTrace()
                         }
                         
                     } // Column burada kapanıyor
@@ -87,4 +94,10 @@ class MainActivity : ComponentActivity() {
             } // FaturamTheme kapanıyor
         } // setContent kapanıyor
     } // onCreate kapanıyor
+    
+    @Composable
+fun dugme(onClick: () -> Unit) {
+    Button(onClick = { onClick() }) {
+          Text("Kırmızı")  
+    }
 }
