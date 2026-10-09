@@ -53,6 +53,11 @@ import java.io.FileOutputStream
 import java.io.IOException
 
 class MainActivity : ComponentActivity() {
+    
+    private var okumayetkisi = false
+    private var yazmayetkisi = false
+    private var yetkisiisteme: ActivityResultLauncher<Array<String>>
+    
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -60,7 +65,6 @@ class MainActivity : ComponentActivity() {
             FaturamTheme {
                 var girdi by remember { mutableStateOf("Buraya yazı girin") }
                 val context = LocalContext.current
-                
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Column(
                         modifier = Modifier
@@ -101,3 +105,27 @@ fun dugme(onClick: () -> Unit) {
           Text("Kırmızı")  
     }
 }
+
+
+    private fun yetkiistiyormu() {
+        val hasReadPermission = ContextCompat.checkSelfPermission(
+        Manifest.permission.READ_EXTERNAL_STORAGE
+        ) == PackageManager.PERMISSION_GRANTED
+        val hasWritePermission = ContextCompat.checkSelfPermission(
+                                
+        ) == PackageManager.PERMISSION_GRANTED
+        val minSdk29 = Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q
+                            
+        okumayetkisi = hasReadPermission
+        yazmayetkisi = hasWritePermission || minsdk29
+        
+        val permissionToRequest = mutableListOf<String>{}
+        if(!WritePermissionGranted) {
+            permissionToRequest.add(Manifest.permission.WRITE_EXTERNAL_STORAGE)
+        }
+        if(!readPermissionGranted)
+           permissionToRequest.add(Manifest.permission.READ_EXTERNAL_STORAGE)
+        if(permissionsToRequest.isNotEmpty()) {
+            yetkiisteme.launch(permissionsToRequest.toTypedArray())
+        }   
+       }
