@@ -86,7 +86,7 @@ class MainActivity : ComponentActivity() {
                         dugme(onClick = { try {
                             val fos: FileOutputStream =
                             context.openFileOutput("Text.txt", Context.MODE_PRIVATE)
-                            fos.write()
+                            fos.write(girdi.toByteArray())
                             fos.flush()
                             fos.close() 
                         } catch (e: IOException) {
@@ -106,26 +106,27 @@ fun dugme(onClick: () -> Unit) {
     }
 }
 
-
     private fun yetkiistiyormu() {
         val hasReadPermission = ContextCompat.checkSelfPermission(
+        this,
         Manifest.permission.READ_EXTERNAL_STORAGE
         ) == PackageManager.PERMISSION_GRANTED
         val hasWritePermission = ContextCompat.checkSelfPermission(
-                                
+        this,
         ) == PackageManager.PERMISSION_GRANTED
         val minSdk29 = Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q
                             
         okumayetkisi = hasReadPermission
-        yazmayetkisi = hasWritePermission || minsdk29
+        yazmayetkisi = hasWritePermission || minSdk29
         
         val permissionToRequest = mutableListOf<String>{}
-        if(!WritePermissionGranted) {
+        if(!okumayetkisi) {
             permissionToRequest.add(Manifest.permission.WRITE_EXTERNAL_STORAGE)
         }
-        if(!readPermissionGranted)
+        if(!yazmayetkisi)
            permissionToRequest.add(Manifest.permission.READ_EXTERNAL_STORAGE)
         if(permissionsToRequest.isNotEmpty()) {
             yetkiisteme.launch(permissionsToRequest.toTypedArray())
         }   
        }
+}
